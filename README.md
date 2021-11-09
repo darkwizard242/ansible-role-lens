@@ -15,22 +15,22 @@ Available variables are listed below (located in `defaults/main.yml`):
 ### Variables list:
 
 ```yaml
-lens_app: Lens
+lens_app: lens
 lens_desired_state: present
 lens_version: 5.2.6
 
 # For Debian/Ubuntu Family
-lens_debian_url: "https://api.k8slens.dev/binaries/{{ lens_app }}-{{ lens_version }}-latest.20211104.1.amd64.deb"
+lens_debian_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20211104.1.amd64.deb"
 
 # For EL Family
-lens_el_url: "https://api.k8slens.dev/binaries/{{ lens_app }}-{{ lens_version }}-latest.20211104.1.x86_64.rpm"
+lens_el_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20211104.1.x86_64.rpm"
 ```
 
 ### Variables table:
 
 Variable           | Description
 ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------
-lens_app           | Defines the app to install i.e. **Lens**
+lens_app           | Defines the app to install i.e. **lens**
 lens_desired_state | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Defaults to `present`.
 lens_version       | Defined to dynamically fetch the desired version to install. Defaults to: **5.2.6**
 lens_debian_url    | Defines URL to download the 'deb' package from for Debian/Ubuntu family systems.
