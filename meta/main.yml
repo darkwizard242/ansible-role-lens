@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  role_name: lens
+  author: darkwizard242
+  description: Installs/Uninstalls 'Lens' IDE for Kubernetes.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+        - focal
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 7
+        - 8
+
+  galaxy_tags:
+    - lens
+    - k8s
+    - ide
+    - linux

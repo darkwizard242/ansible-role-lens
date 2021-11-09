@@ -1,0 +1,12 @@
+---
+# defaults file for lens
+
+lens_app: Lens
+lens_desired_state: present
+lens_version: 5.2.6
+
+# For Debian/Ubuntu Family
+lens_debian_url: "https://api.k8slens.dev/binaries/{{ lens_app }}-{{ lens_version }}-latest.20211104.1.amd64.deb"
+
+# For EL Family
+lens_el_url: "https://api.k8slens.dev/binaries/{{ lens_app }}-{{ lens_version }}-latest.20211104.1.x86_64.rpm"

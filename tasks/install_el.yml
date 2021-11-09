@@ -1,0 +1,8 @@
+---
+# tasks file for lens | EL Family
+
+- name: EL Family | Downloading and installing {{ lens_app }} {{ lens_version }}
+  yum:
+    name: "{{ lens_el_url }}"
+    state: "{{ lens_desired_state }}"
+    disable_gpg_check: yes
