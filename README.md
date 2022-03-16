@@ -17,13 +17,14 @@ Available variables are listed below (located in `defaults/main.yml`):
 ```yaml
 lens_app: lens
 lens_desired_state: present
-lens_version: 5.4.1
+lens_version: 5.4.2
 
 # For Debian/Ubuntu Family
-lens_debian_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220304.1.amd64.deb"
+lens_debian_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220314.1.amd64.deb"
+https://api.k8slens.dev/binaries/Lens-5.4.2-latest.20220314.1.amd64.deb
 
 # For EL Family
-lens_el_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220304.1.x86_64.rpm"
+lens_el_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220314.1.x86_64.rpm"
 ```
 
 ### Variables table:
