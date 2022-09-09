@@ -3,10 +3,10 @@
 
 lens_app: lens
 lens_desired_state: present
-lens_version: 6.0.1
+lens_version: 6.0.2
 
 # For Debian/Ubuntu Family
-lens_debian_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220810.2.amd64.deb"
+lens_debian_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220908.1.amd64.deb"
 
 # For EL Family
-lens_el_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220810.2.x86_64.rpm"
+lens_el_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220908.1.x86_64.rpm"
