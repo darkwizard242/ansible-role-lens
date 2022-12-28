@@ -17,13 +17,12 @@ Available variables are listed below (located in `defaults/main.yml`):
 ```yaml
 lens_app: lens
 lens_desired_state: present
-lens_version: 6.0.2
 
 # For Debian/Ubuntu Family
-lens_debian_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220908.1.amd64.deb"
+lens_debian_url: "https://api.k8slens.dev/binaries/Lens-2022.12.221341-latest.amd64.deb"
 
 # For EL Family
-lens_el_url: "https://api.k8slens.dev/binaries/Lens-{{ lens_version }}-latest.20220908.1.x86_64.rpm"
+lens_el_url: "https://api.k8slens.dev/binaries/Lens-2022.12.221341-latest.x86_64.rpm"
 ```
 
 ### Variables table:
@@ -32,7 +31,6 @@ Variable           | Description
 ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------
 lens_app           | Defines the app to install i.e. **lens**
 lens_desired_state | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Defaults to `present`.
-lens_version       | Defined to dynamically fetch the desired version to install. Defaults to: **6.0.2**
 lens_debian_url    | Defines URL to download the 'deb' package from for Debian/Ubuntu family systems.
 lens_el_url        | Defines URL to download the 'rpm' package from for EL family systems.
 
@@ -48,16 +46,6 @@ For default behaviour of role (i.e. installation of **lens**) in ansible playboo
 - hosts: servers
   roles:
     - darkwizard242.lens
-```
-
-For customizing behavior of role (i.e. specifying the desired **lens** version) in ansible playbooks.
-
-```yaml
-- hosts: servers
-  roles:
-    - darkwizard242.lens
-  vars:
-    lens_version: 4.2.5
 ```
 
 For customizing behavior of role (i.e. uninstallation of **lens** package) in ansible playbooks.
